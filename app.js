@@ -10,13 +10,14 @@ var usersRouter = require('./routes/users');
 var app = express();
 var session = require("express-session");
 
-app.set("trust proxy", 1);
+//app.set("trust proxy", 1);
 app.use(session({
   secret: "1234",
   resave: false,
-  saveUninitialized: true,
-  cookie: { secure: true }
+  saveUninitialized: true
+  //cookie: { secure: true, maxAge: 60000 }
 }));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
