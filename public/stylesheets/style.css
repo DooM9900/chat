@@ -8,3 +8,21 @@ body {
 a {
   color: #00B7FF;
 }
+#div_login{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+#left{
+  background: lightgreen;
+}
+#top{
+  background: lightcyan;
+}
+
+.col-md-4{
+  background: lightpink;
+}
+.col-md-8{
+  background: lightsalmon;
+}
